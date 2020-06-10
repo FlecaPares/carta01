@@ -6,10 +6,12 @@
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   color: black;
+
 }
 
 header {
-    position: sticky;
+  position: sticky;
+  top:0;
   width: 100%;
   height: auto;
   display: flex;
@@ -17,15 +19,34 @@ header {
   justify-content: space-around;
   padding: 10px;
   border-bottom: solid grey 3px;
+  background-color: white;
+  z-index: 1;
 }
 
-header h1, header h2{
-    color: chartreuse;
+header h1,
+header h2 {
+  color: chartreuse;
 }
 
-header h1{
-    font-family: "Alte Schwabacher", sans-serif;
-    font-size: 2em;
+header h1 {
+  font-family: "Alte Schwabacher", sans-serif;
+  font-size: 2em;
+}
+
+main ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main img{
+    width: 4.125rem;
+    height: auto;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
 }
 
 .containerInici {
@@ -61,12 +82,31 @@ header h1{
   font-size: 1.5rem;
 }
 
-.container {
-  width: 100%;
-  display: flex;
-}
-
 .fa-bars {
   font-size: 25px;
   color: black;
+}
+
+.menuPrincipal {
+  position: relative;
+  top: 50px;
+  line-height: 50px;
+}
+
+.menuPrincipal h1{
+    font-size:2rem;
+    line-height: 3.6875rem;
+}
+a {
+  text-decoration: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+}
+
+hr{
+    border: 3px solid black;
+    /* border-radius: 5px; */
 }
