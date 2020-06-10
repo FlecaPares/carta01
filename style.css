@@ -1,42 +1,72 @@
-*{
-    margin: 0;
-    padding: 0;
-    border:0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: black;
 }
 
-.containerInici{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    text-align: center;
-    color: white;
+header {
+    position: sticky;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: solid grey 3px;
 }
 
-#fotobotiga1907{
-    margin-top: 20px;
-    width: auto;
-    max-width: 400px;
-    height: auto;
+header h1, header h2{
+    color: chartreuse;
+}
+
+header h1{
+    font-family: "Alte Schwabacher", sans-serif;
+    font-size: 2em;
+}
+
+.containerInici {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+#fotobotiga1907 {
+  margin-top: 20px;
+  width: auto;
+  max-width: 400px;
+  height: auto;
 }
 
 /* Centered text */
 .centered {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .titol {
-    font-family: 'Alte Schwabacher', sans-serif;
-    color: chartreuse;
-    font-size: 6rem;
+  font-family: "Alte Schwabacher", sans-serif;
+  color: chartreuse;
+  font-size: 6rem;
 }
 
-.subtitol{
-    color: chartreuse;
-    font-size: 1.5rem;  
+.subtitol {
+  color: chartreuse;
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.fa-bars {
+  font-size: 25px;
+  color: black;
 }
