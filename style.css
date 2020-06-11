@@ -1,116 +1,137 @@
-@import url(//db.onlinewebfonts.com/c/767dd77d2eaa977b71f06f7a4199aeb6?family=Alte+Schwabacher+OSF);
+@import url(//db.onlinewebfonts.com/c/767dd77d2eaa977b71f06f7a4199aeb6?family=Alte + Schwabacher + OSF);
 @import url(//db.onlinewebfonts.com/c/4d55cdd95799412f780604799172151b?family=Diploma);
+@import url(//db.onlinewebfonts.com/c/d85e6ab19860a0a1cc2c3d7a3eb7f98c?family=Monotype + Corsiva);
+
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    color: black;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+.bodyTreball {
+  width: auto;
+  max-width: 600px;
+  margin: auto;
+  background-color: chartreuse;
+  text-align: center;
 }
 
 header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-    border-bottom: solid grey 3px;
-    background-color: white;
-    z-index: 1;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: solid grey 3px;
+  background-color: chartreuse;
+  z-index: 1;
 }
 
 header h1,
 header h2 {
-    color: chartreuse;
+  color: black;
+  background-color: chartreuse;
 }
 
 header h1 {
-    font-family: "Alte Schwabacher OSF", sans-serif;
-    font-size: 2em;
+  font-family: "Alte Schwabacher OSF", sans-serif;
+  font-size: 3.5em;
 }
 
-main ul li a {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+main ul li a div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-main img {
-    width: 4.125rem;
-    height: auto;
+main img,
+main h1 {
+  width: 6.125rem;
+  height: auto;
+  margin: 5px;
 }
 
 .container {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .containerInici {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
 }
 
 #fotobotiga1907 {
-    margin-top: 20px;
-    width: auto;
-    max-width: 400px;
-    height: auto;
+  margin-top: 20px;
+  width: auto;
+  max-width: 400px;
+  height: auto;
 }
-
 
 /* Centered text */
 
 .centered {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .titol {
-    font-family: "Alte Schwabacher OSF", sans-serif;
-    color: chartreuse;
-    font-size: 6rem;
+  font-family: "Alte Schwabacher OSF", sans-serif;
+  color: chartreuse;
+  font-size: 6rem;
 }
 
 .subtitol {
-    color: chartreuse;
-    font-size: 1.5rem;
+  color: chartreuse;
+  font-size: 1.5rem;
+}
+
+.monTe h1 {
+  width: auto;
+}
+
+.monTe img {
+  width: 180px;
 }
 
 .fa-bars {
-    font-size: 25px;
-    color: black;
+  font-size: 25px;
+  color: black;
 }
 
 .menuPrincipal {
-    position: relative;
-    top: 50px;
-    line-height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .menuPrincipal h1 {
-    font-size: 2rem;
-    line-height: 3.6875rem;
+  font-size: 2rem;
+  font-family: "Monotype Corsiva", sans-serif;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 footer {
-    position: absolute;
-    bottom: 0px;
-}
-
-hr {
-    border: 3px solid black;
-    /* border-radius: 5px; */
+  width: 100%;
+  padding: 10px;
+  border-top: solid green 2px;
+  display: flex;
+  justify-content: space-around;
 }
