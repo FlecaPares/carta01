@@ -135,3 +135,17 @@ footer {
   display: flex;
   justify-content: space-around;
 }
+
+footer div{
+    width: 45%;
+}
+footer a{
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all ease-in-out .5s;
+}
+
+footer a:hover{
+    text-decoration-line: underline;
+    font-size: 1.1rem;
+}
