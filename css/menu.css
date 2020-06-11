@@ -1,0 +1,86 @@
+.menuNav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.navMenu {
+    width: 0px;
+    height: 100%;
+    background-color: lightgrey;
+    position: fixed;
+    top: 0;
+    padding-left: 0;
+    display: block;
+    z-index: 2;
+    line-height: 40px;
+    overflow-x: hidden;
+}
+
+.navMenu a {
+    font-size: 20px;
+    line-height: 35px;
+    transition: 0.5s;
+}
+#btn{
+    font-size: 1.5625rem;
+}
+#btnNav:hover{
+    cursor: pointer;
+}
+
+/* .navMenu a:hover {
+    font-size: 23px;
+    text-decoration: underline;
+} */
+
+.subMenu {
+    display: none;
+    padding-left: 50px;
+}
+
+#cancel {
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    top: 25px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.liNavMenu {
+    margin-top: 0px;
+    transition: all .7s ease-in-out;
+}
+
+.idioma {
+    width: 0px;
+    height: auto;
+    background-color: lightgrey;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-left: 0;
+    /*     padding-top: 25px; */
+    display: block;
+    z-index: 2;
+    text-align: center;
+    overflow-x: hidden;
+    transition: all .5s ease;
+}
+
+.idioma img {
+    width: 1.50rem;
+    cursor: pointer;
+}
+
+.idioma li {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transition: all .5s ease-in-out;
+}
