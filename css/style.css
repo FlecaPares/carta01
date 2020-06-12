@@ -4,10 +4,14 @@
 
 @import url(//db.onlinewebfonts.com/c/d85e6ab19860a0a1cc2c3d7a3eb7f98c?family=Monotype+Corsiva);
 
+@import url(//db.onlinewebfonts.com/c/fe2027c27b6a24505f548c6fd2e1076d?family=Berlin+Sans+FB);
+
 /* @font-face {font-family: "Alte Schwabacher BQ"; src: url("//db.onlinewebfonts.com/t/707a1ef016379e27a1f93c67118d64be.eot"); src: url("//db.onlinewebfonts.com/t/707a1ef016379e27a1f93c67118d64be.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/707a1ef016379e27a1f93c67118d64be.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/707a1ef016379e27a1f93c67118d64be.woff") format("woff"), url("//db.onlinewebfonts.com/t/707a1ef016379e27a1f93c67118d64be.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/707a1ef016379e27a1f93c67118d64be.svg#Alte Schwabacher BQ") format("svg"); } */
 
 /* @font-face {font-family: "Monotype Corsiva"; src: url("//db.onlinewebfonts.com/t/d85e6ab19860a0a1cc2c3d7a3eb7f98c.eot"); src: url("//db.onlinewebfonts.com/t/d85e6ab19860a0a1cc2c3d7a3eb7f98c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d85e6ab19860a0a1cc2c3d7a3eb7f98c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d85e6ab19860a0a1cc2c3d7a3eb7f98c.woff") format("woff"), url("//db.onlinewebfonts.com/t/d85e6ab19860a0a1cc2c3d7a3eb7f98c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d85e6ab19860a0a1cc2c3d7a3eb7f98c.svg#Monotype Corsiva") format("svg"); }
  */
+
+  /* @font-face {font-family: "Berlin Sans FB"; src: url("//db.onlinewebfonts.com/t/fe2027c27b6a24505f548c6fd2e1076d.eot"); src: url("//db.onlinewebfonts.com/t/fe2027c27b6a24505f548c6fd2e1076d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/fe2027c27b6a24505f548c6fd2e1076d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/fe2027c27b6a24505f548c6fd2e1076d.woff") format("woff"), url("//db.onlinewebfonts.com/t/fe2027c27b6a24505f548c6fd2e1076d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/fe2027c27b6a24505f548c6fd2e1076d.svg#Berlin Sans FB") format("svg"); } */
 
 * {
   margin: 0;
@@ -59,7 +63,8 @@ main ul li a div {
 
 main img,
 main h1 {
-  width: 6.125rem;
+  width: 35%;
+  min-width: 6.125rem;
   height: auto;
   margin: 5px;
 }
@@ -100,7 +105,18 @@ main h1 {
 
 .subtitol {
   color: chartreuse;
-  font-size: 1.5rem;
+}
+
+.any1907{
+  font-family: "Berlin Sans FB", sans-serif;
+}
+
+.subtitol.any1907{
+  font-size: 2.5rem;
+}
+
+.provisional.any1907 h2{
+  font-size: 1.2rem;
 }
 
 .monTe h1 {
