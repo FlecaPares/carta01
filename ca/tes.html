@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/portfoli.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>Menu principal</title>
+</head>
+
+<body>
+    <div class="bodyTreball">
+        <header>
+            <!-- <div><i class="fa fa-bars"></i></div> -->
+            <nav class="menuNav">
+                <!-- Boto openNav -->
+                <div id="btnNav">
+                    <i class="fas fa-bars" id="btn" onclick="openNav()"></i>
+                </div>
+
+                <ul class="navMenu" id="navMenu">
+                    <br />
+                    <i class="fas fa-times" id="cancel" onclick="closeNav()"></i>
+                    <li class="liNavMenu">
+                        <a href="javascript:canviPagina('/ca/menu.html');">Menú</a>
+                    </li>
+                    <li class="liNavMenu">
+                        <a href="javascript:canviPagina('/ca/tes.html');">Tè</a>
+                        <ul class="subMenu" id="subMenu">
+                            <li>
+                                <a href="javascript:alert('encara no');">Te blanc</a>
+                            </li>
+                            <li>
+                                <a href="javascript:alert('encara no');">Te vermell</a>
+                            </li>
+                            <li>
+                                <a href="javascript:alert('encara no');">Te negre</a>
+                            </li>
+                            <li>
+                                <a href="javascript:alert('encara no');">Roiboos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="liNavMenu">
+                        <a href="javascript:canviPagina('/ca/cafe.html');">Cafès</a>
+                    </li>
+
+                    <li class="liNavMenu">
+                        <a href="javascript:canviPagina('/ca/refresc.html');">Refrescs</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <h1>Parés</h1>
+            </div>
+            <div class="any1907">
+                <h2>1907</h2>
+            </div>
+        </header>
+        <main class="container">
+            <br>
+            <h1>Tes i infusions</h1>
+            <br>
+
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')">Tot</button>
+                <button class="btn" onclick="filterSelection('verd')">Verds</button>
+                <button class="btn" onclick="filterSelection('negre')">Negres</button>
+                <button class="btn" onclick="filterSelection('vermell')">Vermells</button>
+                <button class="btn" onclick="filterSelection('infusio')">Infusions</button>
+            </div>
+
+            <!-- Portfolio Gallery Grid -->
+            <section id="secPortfoli">
+                <article id="Gunpowder" class="column verd">
+                    <div class=" content ">
+                        <img src="../imatgesTe/gunpowder.jpg" alt="Gunpowder" onclick="openModal('gunpowderModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('gunpowderModal')">Gunpowder</h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="gunpowderModal" class="modal">
+                        <span id="closeGunpowder" class="close" onclick="closeModal('gunpowderModal')">
+                            &times;
+                        </span>
+                        <div class="caption">
+                            <p>
+                                Considerat un dels tes verds de més qualitat, el te Xinès Gundpowder es caracteritza pel seu agradable sabor, ric i molt intens, sent el favorit dels amants del te verd. Resulta curiós veure com aquestes petites "boletes ", creixen al hidratar-se.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article id="arab-menta" class="column verd">
+                    <div class=" content ">
+                        <img src="../imatgesTe/arab-menta.jpg" alt="Àrab-menta" onclick="openModal('arab-mentaModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('arab-mentaModal')">Àrab amb menta</h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="arab-mentaModal" class="modal">
+                        <span id="closeArab-menta" class="close" onclick="closeModal('arab-mentaModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                Una de les millors maneres de començar el dia saludable i actiu amb aquest verd arbre de te. Un clàssic entre els clàssics, que no deixa de sorprendre pel seu intens sabor que us agradarà a tothom. Igual que la resta de tes verds, te propietats és un
+                                anti-cancerígenes i antioxidants. És molt purificador. Conté una important dosi de calci i ajuda a prevenir la càries.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article id="AssamHamurtis" class="column negre">
+                    <div class=" content ">
+                        <img src="../imatgesTe/Assam-Hamurtis.jpg" alt="Assam Hamurtis" onclick="openModal('AssamHamurtisModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('AssamHamurtisModal')">Assam Hamurtis</h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="AssamHamurtisModal" class="modal">
+                        <span id="closeAssamHamurtis" class="close" onclick="closeModal('AssamHamurtisModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                Una riquesa en maltat i un cos ple són les característiques d'aquest te de la regió d'Assam. Es tracta d'una barreja ideal per gaudir cada dia de Te a el més pur estil anglès, amb sabors únics que afavoreixen el benestar del nostre organisme. Perfecte
+                                per a un esmorzar contundent i per a un brunch a l'estil anglosaxó. També indicat per a aquells dinars en què es busca una bona càrrega d'energia.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article id="oolong" class="column infusio">
+                    <div class=" content ">
+                        <img src="../imatgesTe/Oolong.jpg" alt="Oolong" onclick="openModal('oolongModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('oolongModal')">Oolong</h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="oolongModal" class="modal">
+                        <span id="closeoolong" class="close" onclick="closeModal('oolongModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                Com si fossis al Paradís. Així és com et sentiràs després d'haver provat aquest te Oolong, amb aromes de fruites tropicals i de l'aroma de les flors, sobretot de les roses, embriagarà a totes les persones que el tastin. A diferència d'altres tes blaus,
+                                aquest té una fermentació més llarga.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+
+        </main>
+        <footer>
+            <div>
+                <h2><a href="tel:+34938900216">Telf: 93 890 02 16</a></h2>
+            </div>
+            <div>
+                <h2><a href="https://flecapares.cat/">flecapares.cat</a></h2>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/menu.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/portfoli.js"></script>
+</body>
+
+</html>
