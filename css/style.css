@@ -26,7 +26,7 @@
 
 body {
     /* background-color: chartreuse; */
-    background-color: rgb(252, 245, 144);
+    background-color:rgb(252, 245, 144);
 }
 
 .bodyTreball {
@@ -34,7 +34,7 @@ body {
     max-width: 600px;
     margin: auto;
     /* background-color: chartreuse; */
-    background-color: rgba(252, 245, 144);
+    background-color:rgb(252, 245, 144);
     text-align: center;
 }
 
@@ -49,15 +49,15 @@ header {
     padding: 10px;
     border-bottom: solid grey 3px;
     /* background-color: chartreuse; */
-    background-color: rgba(252, 245, 144);
+    background-color: lightgreen;
     z-index: 1;
 }
 
 header h1,
 header h2 {
-    color:chartreuse;
+    color:green;
     /* background-color: chartreuse; */
-    background-color: rgba(252, 245, 144);
+    background-color: lightgreen;
 }
 
 header h1 {
