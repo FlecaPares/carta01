@@ -25,14 +25,16 @@
 }
 
 body {
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
+    background-color: rgb(252, 245, 144);
 }
 
 .bodyTreball {
     width: auto;
     max-width: 600px;
     margin: auto;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
+    background-color: rgba(252, 245, 144);
     text-align: center;
 }
 
@@ -46,14 +48,16 @@ header {
     justify-content: space-around;
     padding: 10px;
     border-bottom: solid grey 3px;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
+    background-color: rgba(252, 245, 144);
     z-index: 1;
 }
 
 header h1,
 header h2 {
-    color: black;
-    background-color: chartreuse;
+    color:chartreuse;
+    /* background-color: chartreuse; */
+    background-color: rgba(252, 245, 144);
 }
 
 header h1 {
