@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/portfoli.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>Menu principal</title>
+  </head>
+
+  <body>
+    <div class="bodyTreball">
+      <header>
+        <!-- <div><i class="fa fa-bars"></i></div> -->
+        <nav class="menuNav">
+          <!-- Boto openNav -->
+          <div id="btnNav">
+            <i class="fas fa-bars" id="btn" onclick="openNav()"></i>
+          </div>
+
+          <ul class="navMenu" id="navMenu">
+            <br />
+            <i class="fas fa-times" id="cancel" onclick="closeNav()"></i>
+            <li class="liNavMenu">
+              <a href="javascript:canviPagina('menu.html');">Menú</a>
+            </li>
+            <li class="liNavMenu">
+              <a href="javascript:canviPagina('tes.html');">Tè</a>
+              <ul class="subMenu" id="subMenu">
+                <li>
+                  <a href="javascript:alert('encara no');">Te blanc</a>
+                </li>
+                <li>
+                  <a href="javascript:alert('encara no');">Te vermell</a>
+                </li>
+                <li>
+                  <a href="javascript:alert('encara no');">Te negre</a>
+                </li>
+                <li>
+                  <a href="javascript:alert('encara no');">Roiboos</a>
+                </li>
+              </ul>
+            </li>
+            <li class="liNavMenu">
+              <a href="javascript:canviPagina('cafe.html');">Cafès</a>
+            </li>
+
+            <li class="liNavMenu">
+              <a href="javascript:canviPagina('refresc.html');">Refrescs</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <h1>Parés</h1>
+        </div>
+        <div class="any1907">
+          <h2>1907</h2>
+        </div>
+      </header>
+      <main class="container">
+        <br />
+        <h1>Refrescs</h1>
+        <br />
+
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')">
+            Tot
+          </button>
+          <button class="btn" onclick="filterSelection('aigua')">Aigues</button>
+          <button class="btn" onclick="filterSelection('suc')">Sucs</button>
+          <button class="btn" onclick="filterSelection('refresc')">
+            Refrescs
+          </button>
+          <button class="btn" onclick="filterSelection('cervesa')">
+            Cervesa
+          </button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <section id="secPortfoli">
+          <article id="Boi" class="column aigua">
+            <div class="content">
+              <img
+                src="../imatgesBeguda/Boi.jpg"
+                alt="Aigua de Boi"
+                onclick="openModal('boiModal')"
+              />
+            </div>
+            <div>
+              <h2 onclick="openModal('boiModal')">Aigua de Boï</h2>
+            </div>
+            <!-- The Modal -->
+            <div id="boiModal" class="modal">
+              <span
+                id="closeBoi"
+                class="close"
+                onclick="closeModal('boiModal')"
+              >
+                &times;
+              </span>
+              <div class="caption">
+                <p>Disposem d'aquests formats:</p>
+                <br />
+                <ol>
+                  <li>Aigua Boï de 330cl</li>
+                  <li>Aigua Boï de 500cl</li>
+                </ol>
+              </div>
+            </div>
+          </article>
+          <article id="Viladrau" class="column aigua">
+            <div class="content">
+              <img
+                src="../imatgesBeguda/Viladrau.jpg"
+                alt="Aigua de Viladrau"
+                onclick="openModal('viladrauModal')"
+              />
+            </div>
+            <div>
+              <h2 onclick="openModal('viladrauModal')">Aigua de Viladrau</h2>
+            </div>
+            <!-- The Modal -->
+            <div id="viladrauModal" class="modal">
+              <span
+                id="closeviladrau"
+                class="close"
+                onclick="closeModal('viladrauModal')"
+              >
+                &times;
+              </span>
+              <div class="caption">
+                <p>Disposem d'aquests formats:</p>
+                <br />
+                <ol>
+                  <li>Aigua Viladrau de 330cl</li>
+                  <li>Aigua Viladrau de 500cl</li>
+                </ol>
+              </div>
+            </div>
+          </article>
+          <article id="vichy" class="column aigua">
+            <div class="content">
+              <img
+                src="../imatgesBeguda/vichy.jpg"
+                alt="Vichy"
+                onclick="openModal('vichyModal')"
+              />
+            </div>
+            <div>
+              <h2 onclick="openModal('vichyModal')">Vichy</h2>
+            </div>
+            <!-- The Modal -->
+            <div id="vichyModal" class="modal">
+              <span
+                id="closevichy"
+                class="close"
+                onclick="closeModal('vichyModal')"
+              >
+                &times;
+              </span>
+              <div class="caption">
+                <p>
+                  El consum d'aigua mineral carbònica Vichy Català prevé
+                  malalties cardiometabólicas Les propietats mineromedicinals de
+                  l'aigua mineral carbònica Vichy Català contribueixen a la
+                  disminució de el risc de malalties com diabetis, hipertensió,
+                  osteoporosi i obesitat en adults sans. A més, ajuda a reduir
+                  l'acidesa estomacal, millora el metabolisme dels lípids i
+                  disminueix els nivells de glucosa, segons l'estudi 'Efectes de
+                  l'consum d'aigua mineral natural carbònica Vichy Català'
+                  realitzat pel Consell Superior d'Investigacions Científiques
+                  (CSIC). Aquest tipus d'aigua mineral és rica en sals minerals
+                  i, en concret, conté bicarbonat, clorur, sodi i diòxid de
+                  carboni lliure. L'assaig ha revelat que el consum d'un litre
+                  d'aigua a el dia millora el benestar de les persones i
+                  contribueix a prevenir risc de malalties cardiometabólicas
+                  cròniques. Aquesta protecció es deu al seu efecte moderadament
+                  alcalinitzant, que ajuda a mantenir un equilibri àcid-base en
+                  l'organisme. El consum d'aigua mineral carbònica Vichy Català
+                  prevé malalties cardiometabólicas Els efectes d'aquesta aigua
+                  es fan patents als pocs minuts del seu consum, a l'activar de
+                  forma imminent les molècules presents en el procés digestiu. A
+                  més, el seu consum habitual afavoreix que aquesta millora es
+                  mantingui durant les quatre i vuit setmanes posteriors.
+                </p>
+
+                <h2>NO ELEVA LA PRESSIÓ ARTERIAL</h2>
+                <p>
+                  Els resultats demostren que aquesta aigua, que aporta 1 gram
+                  de sodi i 2 grams de bicarbonat per litre, no eleva la pressió
+                  arterial, de manera que es recomana el seu consum a persones
+                  amb hipertensió. El sodi no és el mateix que el clorur de
+                  sodi. El primer es considera un nutrient, i el segon es coneix
+                  com la sal de taula. Quan una persona és hipertensa, se li
+                  aconsella disminuir el seu consum de sal, però el bicarbonat
+                  sòdic d'l'aigua Vichy Català és un compost protector i, per
+                  tant, es recomana a aquestes persones A més, té un important
+                  paper en la dieta mediterrània que, unida a un ritme de vida i
+                  alimentació saludable, influeix positivament en la salut de
+                  les persones, desplaçant el consum d'altres begudes
+                  ensucrades. La salut és una combinació de diversos factors, i
+                  cal tenir present que no hi ha aliments bons ni dolents, s'ha
+                  de menjar de tot amb moderació.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article id="CocaCola" class="column refresc">
+            <div class="content">
+              <img
+                src="../imatgesBeguda/coca_cola.jpg"
+                alt="Aigua de Viladrau"
+                onclick="openModal('CocaColaModal')"
+              />
+            </div>
+            <div>
+              <h2 onclick="openModal('CocaColaModal')">Coca Cola</h2>
+            </div>
+            <!-- The Modal -->
+            <div id="CocaColaModal" class="modal">
+              <span
+                id="closeCocaCola"
+                class="close"
+                onclick="closeModal('CocaColaModal')"
+              >
+                &times;
+              </span>
+              <div class="caption">
+                <p>Disposem d'aquests formats:</p>
+                <br />
+                <ol>
+                  <li>Coca Cola vidre de 200cl</li>
+                  <li>Coca Cola llauna de 330cl</li>
+                  <li>Coca Cola light llauna de 330cl</li>
+                  <li>Coca Cola zero llauna de 330cl</li>
+                </ol>
+              </div>
+            </div>
+          </article>
+
+          <article id="Fanta" class="column refresc">
+            <div class="content">
+              <img
+                src="../imatgesBeguda/fanta.jpg"
+                alt="Fanta"
+                onclick="openModal('FantaModal')"
+              />
+            </div>
+            <div>
+              <h2 onclick="openModal('FantaModal')">Fanta</h2>
+            </div>
+            <!-- The Modal -->
+            <div id="FantaModal" class="modal">
+              <span
+                id="closeFanta"
+                class="close"
+                onclick="closeModal('FantaModal')"
+              >
+                &times;
+              </span>
+              <div class="caption">
+                <p>Disposem d'aquests formats:</p>
+                <br />
+                <ol>
+                  <li>Fanta taronja llauna de 330cl</li>
+                  <li>Fanta llimona llauna de 330cl</li>
+
+                </ol>
+              </div>
+            </div>
+          </article>
+
+
+
+
+
+          <article id="Aquarius" class="column refresc">
+            <div class="content">
+              <img src="../imatgesBeguda/aquarius.jpg" alt="Assam Hamurtis" />
+            </div>
+            <div>
+              <h2>Aquarius</h2>
+            </div>
+            <!-- The Modal -->
+            <div id="AquariusModal" class="modal">
+              <span
+                id="closeAquarius"
+                class="close"
+                onclick="closeModal('AquariusModal')"
+              >
+                &times;
+              </span>
+              <div class="caption">
+                <p>Disposem d'aquests formats:</p>
+                <br />
+                <ol>
+                  <li>Aquarius de 330cl</li>
+                </ol>
+              </div>
+            </div>
+          </article>
+          <article id="bitter" class="column refresc">
+            <div class="content">
+              <img src="../imatgesBeguda/bitter_kas.jpg" alt="Oolong" />
+            </div>
+            <div>
+              <h2>Bitter Kas</h2>
+            </div>
+            <!-- The Modal -->
+            <div id="bitterModal" class="modal">
+              <span
+                id="closebitter"
+                class="close"
+                onclick="closeModal('oolongModal')"
+              >
+                &times;
+              </span>
+              <div class="caption">
+                <p>
+                  Bitter Kas
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+      <footer>
+        <div>
+          <h2><a href="tel:+34938900216">Telf: 93 890 02 16</a></h2>
+        </div>
+        <div>
+          <h2><a href="https://flecapares.cat/">flecapares.cat</a></h2>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/menu.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/portfoli.js"></script>
+  </body>
+</html>
