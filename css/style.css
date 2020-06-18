@@ -190,10 +190,13 @@ header .any1907 h2 {
 h1 {
     font-size: 2.5rem;
     font-family: 'Pinyon Script', cursive;
+    text-decoration: none;
+    color: black;
 }
 
 a {
     text-decoration: none;
+    /* color: black; */
 }
 
 li {
