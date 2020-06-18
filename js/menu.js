@@ -2,7 +2,7 @@ function openNav() {
     document.getElementById("navMenu").style.transition = "all 0.7s";
     document.getElementById("navMenu").style.transitionTimingFunction = "easy-out";
     document.getElementById("navMenu").style.padding = "20px 50px 0 50px";
-    document.getElementById("navMenu").style.width = "auto";
+    document.getElementById("navMenu").style.width = "50%";
     let x = document.getElementsByClassName("liNavMenu");
     for (let i = 0; i < x.length; i++) {
         x[i].style.marginTop = "20px";
