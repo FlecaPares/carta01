@@ -26,7 +26,7 @@
 
 body {
     /* background-color: chartreuse; */
-    background-color:rgb(252, 245, 144);
+    background-color:rgb(235, 224, 75);
 }
 
 .bodyTreball {
@@ -106,6 +106,7 @@ section {
 article {
     /* margin: 0.625rem; */
     width: 40%;
+    max-width: 150px;
     height: auto;
     text-align: center;
     padding: 2px;
@@ -113,8 +114,9 @@ article {
     cursor: pointer;
 }
 
-article img {
-    width: 70%;
+.content img {
+    width: 3.125rem;
+    height: 5.625rem;
     border: solid white 3px;
     border-radius: 10px;
 }
