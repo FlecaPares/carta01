@@ -104,7 +104,7 @@ section {
 }
 
 article {
-    /* margin: 0.625rem; */
+    /* margin-top: 5.25rem; */
     width: 40%;
     max-width: 150px;
     height: auto;
@@ -112,6 +112,13 @@ article {
     padding: 2px;
     overflow: hidden;
     cursor: pointer;
+}
+
+#menu01 article img {
+    width: 8rem;
+    height: auto;
+    border: solid white 3px;
+    border-radius: 10px;
 }
 
 .content img {

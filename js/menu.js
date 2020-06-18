@@ -11,7 +11,7 @@ function openNav() {
 }
 
 function closeNav() {
-    document.getElementById("subMenu").style.display = "none";
+    // document.getElementById("subMenu").style.display = "none";
     document.getElementById("navMenu").style.transitionTimingFunction = "easy-out";
     document.getElementById("navMenu").style.transition = "all 0.7s";
     document.getElementById("navMenu").style.width = "0";
@@ -32,7 +32,7 @@ function obrirSubmenu() {
 }
 
 function canviPagina(pagina) {
-    document.getElementById("subMenu").style.display = "none";
+    //document.getElementById("subMenu").style.display = "none";
     document.getElementById("navMenu").style.display = "none";
     location.assign(pagina);
     /* setTimeout(function() { document.location.href = pagina; }, 5); */

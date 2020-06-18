@@ -18,42 +18,32 @@
         <header>
             <!-- <div><i class="fa fa-bars"></i></div> -->
             <nav class="menuNav">
-                <!-- Boto openNav -->
-                <div id="btnNav">
-                    <i class="fas fa-bars" id="btn" onclick="openNav()"></i>
-                </div>
+          <!-- Boto openNav -->
+          <div id="btnNav">
+            <i class="fas fa-bars" id="btn" onclick="openNav()"></i>
+          </div>
 
-                <ul class="navMenu" id="navMenu">
-                    <br />
-                    <i class="fas fa-times" id="cancel" onclick="closeNav()"></i>
-                    <li class="liNavMenu">
-                        <a href="javascript:canviPagina('menu.html');">Menú</a>
-                    </li>
-                    <li class="liNavMenu">
-                        <a href="javascript:canviPagina('tes.html');">Tè</a>
-                        <ul class="subMenu" id="subMenu">
-                            <li>
-                                <a href="javascript:alert('encara no');">Te blanc</a>
-                            </li>
-                            <li>
-                                <a href="javascript:alert('encara no');">Te vermell</a>
-                            </li>
-                            <li>
-                                <a href="javascript:alert('encara no');">Te negre</a>
-                            </li>
-                            <li>
-                                <a href="javascript:alert('encara no');">Roiboos</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="liNavMenu">
-                        <a href="javascript:canviPagina('cafe.html');">Cafès</a>
-                    </li>
+          <ul class="navMenu" id="navMenu">
+            <br />
+            <i class="fas fa-times" id="cancel" onclick="closeNav()"></i>
+            <li class="liNavMenu">
+              <a href="javascript:canviPagina('menu.html');">Menú</a>
+            </li>
+            <li class="liNavMenu">
+              <a href="javascript:canviPagina('tes.html');">Tè</a>
+            </li>
+            <li class="liNavMenu">
+              <a href="javascript:canviPagina('cafe.html');">Cafès</a>
+            </li>
 
-                    <li class="liNavMenu">
-                        <a href="javascript:canviPagina('refresc.html');">Refrescs</a>
-                    </li>
-                </ul>
+            <li class="liNavMenu">
+              <a href="javascript:canviPagina('refresc.html');">Refrescs</a>
+            </li>
+            <li class="liNavMenu separador">* * * * *</li>
+            <li class="liNavMenu">
+              <a href="javascript:canviPagina('refresc.html');">El món del Te</a>
+              </li>
+          </ul>
             </nav>
             <div>
                 <h1>Parés</h1>
@@ -82,7 +72,9 @@
                         <img src="../imatgesTe/gunpowder.jpg" alt="Gunpowder" onclick="openModal('gunpowderModal')">
                     </div>
                     <div>
-                        <h2 onclick="openModal('gunpowderModal')">Gunpowder</h2>
+                        <h2 onclick="openModal('gunpowderModal')">Gunpowder
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
                     </div>
                     <!-- The Modal -->
                     <div id="gunpowderModal" class="modal">
@@ -101,7 +93,9 @@
                         <img src="../imatgesTe/arab-menta.jpg" alt="Àrab-menta" onclick="openModal('arab-mentaModal')">
                     </div>
                     <div>
-                        <h2 onclick="openModal('arab-mentaModal')">Àrab amb menta</h2>
+                        <h2 onclick="openModal('arab-mentaModal')">Àrab amb menta
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
                     </div>
                     <!-- The Modal -->
                     <div id="arab-mentaModal" class="modal">
@@ -121,7 +115,9 @@
                         <img src="../imatgesTe/Assam-Hamurtis.jpg" alt="Assam Hamurtis" onclick="openModal('AssamHamurtisModal')">
                     </div>
                     <div>
-                        <h2 onclick="openModal('AssamHamurtisModal')">Assam Hamurtis</h2>
+                        <h2 onclick="openModal('AssamHamurtisModal')">Assam Hamurtis
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
                     </div>
                     <!-- The Modal -->
                     <div id="AssamHamurtisModal" class="modal">
@@ -141,7 +137,9 @@
                         <img src="../imatgesTe/Oolong.jpg" alt="Oolong" onclick="openModal('oolongModal')">
                     </div>
                     <div>
-                        <h2 onclick="openModal('oolongModal')">Oolong</h2>
+                        <h2 onclick="openModal('oolongModal')">Oolong
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
                     </div>
                     <!-- The Modal -->
                     <div id="oolongModal" class="modal">
