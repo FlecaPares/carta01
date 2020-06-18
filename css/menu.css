@@ -21,6 +21,7 @@
     z-index: 2;
     line-height: 40px;
     overflow-x: hidden;
+    transition: all 0.7s ease-out;
 }
 
 .navMenu a {
