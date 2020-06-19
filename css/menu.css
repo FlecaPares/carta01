@@ -1,4 +1,5 @@
 .menuNav {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     margin-bottom: 10px;
@@ -6,12 +7,12 @@
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-    transition: all 0.7s ease-out;
 }
 
 .navMenu {
     position: fixed;
     width: 0px;
+    min-width: 0px;
     height: 100%;
     background-color: lightgrey;
     top: 0;

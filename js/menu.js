@@ -1,9 +1,13 @@
 function openNav() {
-    //document.getElementById("navMenu").style.transition = "all 0.7s ease-out";
-    //document.getElementById("navMenu").style.transitionTimingFunction = "easy-out";
+    //document.getElementById("navMenu").style.transition = "all 0.7s";
+    // document.getElementById("navMenu").style.transitionTimingFunction = "easy-out";
     document.getElementById("navMenu").style.padding = "20px 50px 0 50px";
     document.getElementById("navMenu").style.width = "auto";
     document.getElementById("navMenu").style.minWidth = "40%";
+    let y = document.getElementsByClassName("liNavMenuA");
+    for (let i = 0; i < y.length; i++) {
+        y[i].style.fontSize = "1.5rem";
+    }
     let x = document.getElementsByClassName("liNavMenu");
     for (let i = 0; i < x.length; i++) {
         x[i].style.marginTop = "20px";
@@ -13,16 +17,21 @@ function openNav() {
 
 function closeNav() {
     // document.getElementById("subMenu").style.display = "none";
-    //document.getElementById("navMenu").style.transitionTimingFunction = "ease-out";
-    //document.getElementById("navMenu").style.transition = "all 0.7s ease-out";
-    document.getElementById("navMenu").style.width = "0";
-    document.getElementById("navMenu").style.minWidth = "0";
-    document.getElementById("navMenu").style.padding = "0";
+    //document.getElementById("navMenu").style.transitionTimingFunction = "easy-out";
+    document.getElementById("navMenu").style.transition = "all 0.7s";
+    document.getElementById("navMenu").style.width = "0px";
+    document.getElementById("navMenu").style.minWidth = "0px";
+    document.getElementById("navMenu").style.padding = "0px";
+    let y = document.getElementsByClassName("liNavMenuA");
+    for (let i = 0; i < y.length; i++) {
+        y[i].style.fontSize = "0px";
+    }
     let x = document.getElementsByClassName("liNavMenu");
     for (let i = 0; i < x.length; i++) {
         x[i].style.marginTop = "0px";
     }
 }
+
 
 function obrirSubmenu() {
     var x = document.getElementById("subMenu");
