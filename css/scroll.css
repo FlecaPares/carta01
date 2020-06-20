@@ -1,0 +1,13 @@
+#fletxaScroll {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+.fa-arrow-circle-up {
+    color: red;
+    font-size: 35px;
+}
