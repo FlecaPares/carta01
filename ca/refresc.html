@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
@@ -10,517 +11,361 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <title>Menu principal</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="bodyTreball">
-      <header>
-        <!-- <div><i class="fa fa-bars"></i></div> -->
-        <nav class="menuNav">
-          <!-- Boto openNav -->
-          <div id="btnNav">
-            <i class="fas fa-bars" id="btn" onclick="openNav()"></i>
-          </div>
+        <header>
+            <!-- <div><i class="fa fa-bars"></i></div> -->
+            <nav class="menuNav">
+                <!-- Boto openNav -->
+                <div id="btnNav">
+                    <i class="fas fa-bars" id="btn" onclick="openNav()"></i>
+                </div>
 
-          <ul class="navMenu" id="navMenu">
+                <ul class="navMenu" id="navMenu">
+                    <br />
+                    <i class="fas fa-times" id="cancel" onclick="closeNav()"></i>
+                    <li class="liNavMenu">
+                        <a href="javascript:canviPagina('menu.html');" class="liNavMenuA">Menú</a>
+                    </li>
+                    <li class="liNavMenu">
+                        <a href="javascript:canviPagina('tes.html');" class="liNavMenuA">Tes i infusions</a>
+                    </li>
+                    <li class="liNavMenu">
+                        <a href="javascript:canviPagina('cafe.html');" class="liNavMenuA">Cafès i làctics</a>
+                    </li>
+
+                    <li class="liNavMenu">
+                        <a href="javascript:canviPagina('refresc.html');" class="liNavMenuA">Refrescs</a>
+                    </li>
+                    <li class="liNavMenu separador">* * * * *</li>
+                    <li class="liNavMenu">
+                        <a href="javascript:canviPagina('monTe.html');" class="liNavMenuA">El món del Te</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <h1 id="titolHeader">Parés</h1>
+            </div>
+            <div class="any1907">
+                <h2>1907</h2>
+            </div>
+        </header>
+        <main class="container">
             <br />
-            <i class="fas fa-times" id="cancel" onclick="closeNav()"></i>
-            <li class="liNavMenu">
-              <a href="javascript:canviPagina('menu.html');" class="liNavMenuA">Menú</a>
-            </li>
-            <li class="liNavMenu">
-              <a href="javascript:canviPagina('tes.html');" class="liNavMenuA">Tè</a>
-            </li>
-            <li class="liNavMenu">
-              <a href="javascript:canviPagina('cafe.html');" class="liNavMenuA">Cafès</a>
-            </li>
+            <h1>Refrescs</h1>
+            <br />
 
-            <li class="liNavMenu">
-              <a href="javascript:canviPagina('refresc.html');" class="liNavMenuA">Refrescs</a>
-            </li>
-            <li class="liNavMenu separador">* * * * *</li>
-            <li class="liNavMenu">
-              <a href="javascript:canviPagina('refresc.html');" class="liNavMenuA">El món del Te</a>
-              </li>
-          </ul>
-        </nav>
-        <div>
-          <h1>Parés</h1>
-        </div>
-        <div class="any1907">
-          <h2>1907</h2>
-        </div>
-      </header>
-      <main class="container">
-        <br />
-        <h1>Refrescs</h1>
-        <br />
-
-        <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection('all')">
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')">
             Tot
           </button>
-          <button class="btn" onclick="filterSelection('aigua')">Aigues</button>
-          <button class="btn" onclick="filterSelection('suc')">Sucs</button>
-          <button class="btn" onclick="filterSelection('refresc')">
+                <button class="btn" onclick="filterSelection('aigua')">Aigues</button>
+                <button class="btn" onclick="filterSelection('suc')">Sucs</button>
+                <button class="btn" onclick="filterSelection('refresc')">
             Refrescs
           </button>
-          <button class="btn" onclick="filterSelection('cervesa')">
+                <button class="btn" onclick="filterSelection('cervesa')">
             Cervesa
           </button>
-        </div>
+            </div>
 
-        <!-- Portfolio Gallery Grid -->
-        <section id="secPortfoli">
-          <article id="Boi" class="column aigua">
-            <div class="content">
-              <img
-                src="../imatgesBeguda/Boi.jpg"
-                alt="Aigua de Boi"
-                onclick="openModal('boiModal')"
-              />
-            </div>
-            <div>
-              <h2 onclick="openModal('boiModal')">Aigua de Boï
-                <i class="fas fa-plus-circle"></i>
-              </h2>
-            </div>
-            <!-- The Modal -->
-            <div id="boiModal" class="modal">
-              <span
-                id="closeBoi"
-                class="close"
-                onclick="closeModal('boiModal')"
-              >
+            <!-- Portfolio Gallery Grid -->
+            <section id="secPortfoli">
+                <article id="Boi" class="column aigua">
+                    <div class="content">
+                        <img src="../imatgesBeguda/Boi.jpg" alt="Aigua de Boi" onclick="openModal('boiModal')" />
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('boiModal')">Aigua de Boï
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="boiModal" class="modal">
+                        <span id="closeBoi" class="close" onclick="closeModal('boiModal')">
                 &times;
               </span>
-              <div class="caption">
-                <p>Disposem d'aquests formats:</p>
-                <br />
-                <ol>
-                  <li>Aigua Boï de 330cl</li>
-                  <li>Aigua Boï de 500cl</li>
-                </ol>
-              </div>
-            </div>
-          </article>
-          <article id="Viladrau" class="column aigua">
-            <div class="content">
-              <img
-                src="../imatgesBeguda/Viladrau.jpg"
-                alt="Aigua de Viladrau"
-                onclick="openModal('viladrauModal')"
-              />
-            </div>
-            <div>
-              <h2 onclick="openModal('viladrauModal')">Aigua de Viladrau
-                <i class="fas fa-plus-circle"></i>
-              </h2>
-            </div>
-            <!-- The Modal -->
-            <div id="viladrauModal" class="modal">
-              <span
-                id="closeviladrau"
-                class="close"
-                onclick="closeModal('viladrauModal')"
-              >
+                        <div class="caption">
+                            <em>Disposem d'aquests formats:</em>
+                            <br>
+                            <br>
+                            <p>Aigua Boï de 330cl</p>
+                            <p>Aigua Boï de 500cl</p>
+                        </div>
+                    </div>
+                </article>
+                <article id="Viladrau" class="column aigua">
+                    <div class="content">
+                        <img src="../imatgesBeguda/Viladrau.jpg" alt="Aigua de Viladrau" onclick="openModal('viladrauModal')" />
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('viladrauModal')">Aigua de Viladrau
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="viladrauModal" class="modal">
+                        <span id="closeviladrau" class="close" onclick="closeModal('viladrauModal')">
                 &times;
               </span>
-              <div class="caption">
-                <p>Disposem d'aquests formats:</p>
-                <br />
-                <ol>
-                  <li>Aigua Viladrau de 330cl</li>
-                  <li>Aigua Viladrau de 500cl</li>
-                </ol>
-              </div>
-            </div>
-          </article>
-          <article id="vichy" class="column aigua">
-            <div class="content">
-              <img
-                src="../imatgesBeguda/vichy.jpg"
-                alt="Vichy"
-                onclick="openModal('vichyModal')"
-              />
-            </div>
-            <div>
-              <h2 onclick="openModal('vichyModal')">Aigua de Vichy
-                <i class="fas fa-plus-circle"></i>
-              </h2>
-            </div>
-            <!-- The Modal -->
-            <div id="vichyModal" class="modal">
-              <span
-                id="closevichy"
-                class="close"
-                onclick="closeModal('vichyModal')"
-              >
+                        <div class="caption">
+                            <em>Disposem d'aquests formats:</em>
+                            <br>
+                            <br>
+                            <p>Aigua Viladrau de 330cl</p>
+                            <p>Aigua Viladrau de 500cl</p>
+                        </div>
+                    </div>
+                </article>
+                <article id="vichy" class="column aigua">
+                    <div class="content">
+                        <img src="../imatgesBeguda/vichy.jpg" alt="Vichy" onclick="openModal('vichyModal')" />
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('vichyModal')">Aigua de Vichy
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="vichyModal" class="modal">
+                        <span id="closevichy" class="close" onclick="closeModal('vichyModal')">
                 &times;
               </span>
-              <div class="caption">
-                <p>
-                  El consum d'aigua mineral carbònica Vichy Català prevé
-                  malalties cardiometabólicas Les propietats mineromedicinals de
-                  l'aigua mineral carbònica Vichy Català contribueixen a la
-                  disminució de el risc de malalties com diabetis, hipertensió,
-                  osteoporosi i obesitat en adults sans. A més, ajuda a reduir
-                  l'acidesa estomacal, millora el metabolisme dels lípids i
-                  disminueix els nivells de glucosa, segons l'estudi 'Efectes de
-                  l'consum d'aigua mineral natural carbònica Vichy Català'
-                  realitzat pel Consell Superior d'Investigacions Científiques
-                  (CSIC). Aquest tipus d'aigua mineral és rica en sals minerals
-                  i, en concret, conté bicarbonat, clorur, sodi i diòxid de
-                  carboni lliure. L'assaig ha revelat que el consum d'un litre
-                  d'aigua a el dia millora el benestar de les persones i
-                  contribueix a prevenir risc de malalties cardiometabólicas
-                  cròniques. Aquesta protecció es deu al seu efecte moderadament
-                  alcalinitzant, que ajuda a mantenir un equilibri àcid-base en
-                  l'organisme. El consum d'aigua mineral carbònica Vichy Català
-                  prevé malalties cardiometabólicas Els efectes d'aquesta aigua
-                  es fan patents als pocs minuts del seu consum, a l'activar de
-                  forma imminent les molècules presents en el procés digestiu. A
-                  més, el seu consum habitual afavoreix que aquesta millora es
-                  mantingui durant les quatre i vuit setmanes posteriors.
-                </p>
+                        <div class="caption">
+                            <p>
+                                El consum d'aigua mineral carbònica Vichy Català prevé malalties cardiometabólicas Les propietats mineromedicinals de l'aigua mineral carbònica Vichy Català contribueixen a la disminució de el risc de malalties com diabetis, hipertensió, osteoporosi i
+                                obesitat en adults sans. A més, ajuda a reduir l'acidesa estomacal, millora el metabolisme dels lípids i disminueix els nivells de glucosa, segons l'estudi 'Efectes de l'consum d'aigua mineral natural carbònica Vichy Català'
+                                realitzat pel Consell Superior d'Investigacions Científiques (CSIC). Aquest tipus d'aigua mineral és rica en sals minerals i, en concret, conté bicarbonat, clorur, sodi i diòxid de carboni lliure. L'assaig ha revelat que
+                                el consum d'un litre d'aigua a el dia millora el benestar de les persones i contribueix a prevenir risc de malalties cardiometabólicas cròniques. Aquesta protecció es deu al seu efecte moderadament alcalinitzant, que ajuda
+                                a mantenir un equilibri àcid-base en l'organisme. El consum d'aigua mineral carbònica Vichy Català prevé malalties cardiometabólicas Els efectes d'aquesta aigua es fan patents als pocs minuts del seu consum, a l'activar
+                                de forma imminent les molècules presents en el procés digestiu. A més, el seu consum habitual afavoreix que aquesta millora es mantingui durant les quatre i vuit setmanes posteriors.
+                            </p>
+                            <br>
+                            <br>
+                            <em>NO ELEVA LA PRESSIÓ ARTERIAL</em>
+                            <br>
+                            <p>
+                                Els resultats demostren que aquesta aigua, que aporta 1 gram de sodi i 2 grams de bicarbonat per litre, no eleva la pressió arterial, de manera que es recomana el seu consum a persones amb hipertensió. El sodi no és el mateix que el clorur de sodi. El
+                                primer es considera un nutrient, i el segon es coneix com la sal de taula. Quan una persona és hipertensa, se li aconsella disminuir el seu consum de sal, però el bicarbonat sòdic d'l'aigua Vichy Català és un compost protector
+                                i, per tant, es recomana a aquestes persones A més, té un important paper en la dieta mediterrània que, unida a un ritme de vida i alimentació saludable, influeix positivament en la salut de les persones, desplaçant el
+                                consum d'altres begudes ensucrades. La salut és una combinació de diversos factors, i cal tenir present que no hi ha aliments bons ni dolents, s'ha de menjar de tot amb moderació.
+                            </p>
+                        </div>
+                    </div>
+                </article>
 
-                <h2>NO ELEVA LA PRESSIÓ ARTERIAL</h2>
-                <p>
-                  Els resultats demostren que aquesta aigua, que aporta 1 gram
-                  de sodi i 2 grams de bicarbonat per litre, no eleva la pressió
-                  arterial, de manera que es recomana el seu consum a persones
-                  amb hipertensió. El sodi no és el mateix que el clorur de
-                  sodi. El primer es considera un nutrient, i el segon es coneix
-                  com la sal de taula. Quan una persona és hipertensa, se li
-                  aconsella disminuir el seu consum de sal, però el bicarbonat
-                  sòdic d'l'aigua Vichy Català és un compost protector i, per
-                  tant, es recomana a aquestes persones A més, té un important
-                  paper en la dieta mediterrània que, unida a un ritme de vida i
-                  alimentació saludable, influeix positivament en la salut de
-                  les persones, desplaçant el consum d'altres begudes
-                  ensucrades. La salut és una combinació de diversos factors, i
-                  cal tenir present que no hi ha aliments bons ni dolents, s'ha
-                  de menjar de tot amb moderació.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article id="CocaCola" class="column refresc">
-            <div class="content">
-              <img
-                src="../imatgesBeguda/coca_cola.jpg"
-                alt="Aigua de Viladrau"
-                onclick="openModal('CocaColaModal')"
-              />
-            </div>
-            <div>
-              <h2 onclick="openModal('CocaColaModal')">Coca Cola
-                <i class="fas fa-plus-circle"></i>
-              </h2>
-            </div>
-            <!-- The Modal -->
-            <div id="CocaColaModal" class="modal">
-              <span
-                id="closeCocaCola"
-                class="close"
-                onclick="closeModal('CocaColaModal')"
-              >
+                <article id="CocaCola" class="column refresc">
+                    <div class="content">
+                        <img src="../imatgesBeguda/coca_cola.jpg" alt="Aigua de Viladrau" onclick="openModal('CocaColaModal')" />
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('CocaColaModal')">Coca Cola
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="CocaColaModal" class="modal">
+                        <span id="closeCocaCola" class="close" onclick="closeModal('CocaColaModal')">
                 &times;
               </span>
-              <div class="caption">
-                <p>Disposem d'aquests formats:</p>
-                <br />
-                <ol>
-                  <li>Coca Cola vidre de 200cl</li>
-                  <li>Coca Cola llauna de 330cl</li>
-                  <li>Coca Cola light llauna de 330cl</li>
-                  <li>Coca Cola zero llauna de 330cl</li>
-                </ol>
-              </div>
-            </div>
-          </article>
+                        <div class="caption">
+                            <em>Disposem d'aquests formats:</em>
+                            <br>
+                            <br>
+                            <p>Coca Cola vidre de 200cl</p>
+                            <p>Coca Cola llauna de 330cl</p>
+                            <p>Coca Cola light llauna de 330cl</p>
+                            <p>Coca Cola zero llauna de 330cl</p>
+                        </div>
+                    </div>
+                </article>
 
-          <article id="Fanta" class="column refresc">
-            <div class="content">
-              <img
-                src="../imatgesBeguda/fanta.jpg"
-                alt="Fanta"
-                onclick="openModal('FantaModal')"
-              />
-            </div>
-            <div>
-              <h2 onclick="openModal('FantaModal')">Fanta
-                <i class="fas fa-plus-circle"></i>
-              </h2>
-            </div>
-            <!-- The Modal -->
-            <div id="FantaModal" class="modal">
-              <span
-                id="closeFanta"
-                class="close"
-                onclick="closeModal('FantaModal')"
-              >
+                <article id="Fanta" class="column refresc">
+                    <div class="content">
+                        <img src="../imatgesBeguda/fanta.jpg" alt="Fanta" onclick="openModal('FantaModal')" />
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('FantaModal')">Fanta
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="FantaModal" class="modal">
+                        <span id="closeFanta" class="close" onclick="closeModal('FantaModal')">
                 &times;
               </span>
-              <div class="caption">
-                <p>Disposem d'aquests formats:</p>
-                <br />
-                <ol>
-                  <li>Fanta taronja llauna de 330cl</li>
-                  <li>Fanta llimona llauna de 330cl</li>
+                        <div class="caption">
+                            <em>Disposem d'aquests formats:</em>
+                            <br>
+                            <br>
+                            <p>Fanta taronja llauna de 330cl</p>
+                            <p>Fanta llimona llauna de 330cl</p>
+                        </div>
+                    </div>
+                </article>
 
-                </ol>
-              </div>
-            </div>
-          </article>
+                <article id="Aquarius" class="column refresc">
+                    <div class="content">
+                        <img src="../imatgesBeguda/aquarius.jpg" alt="Aquarius" />
+                    </div>
+                    <div>
+                        <h2>Aquarius</h2>
+                    </div>
 
-          <article id="Aquarius" class="column refresc">
-            <div class="content">
-              <img src="../imatgesBeguda/aquarius.jpg" alt="Assam Hamurtis" />
-            </div>
-            <div>
-              <h2>Aquarius</h2>
-            </div>
-            <!-- The Modal -->
-            <div id="AquariusModal" class="modal">
-              <span
-                id="closeAquarius"
-                class="close"
-                onclick="closeModal('AquariusModal')"
-              >
+                </article>
+
+                <article id="Tonica" class="column refresc">
+                    <div class="content">
+                        <img src="../imatgesBeguda/tonica.jpg" alt="Tonica Schweppes" />
+                    </div>
+                    <div>
+                        <h2>Tonica Schweppes</h2>
+                    </div>
+                </article>
+
+                <article id="bitter" class="column refresc">
+                    <div class="content">
+                        <img src="../imatgesBeguda/bitter_kas.jpg" alt="Bitter Kas" />
+                    </div>
+                    <div>
+                        <h2>Bitter Kas</h2>
+                    </div>
+
+                </article>
+
+                <article id="suc" class="column suc">
+                    <div class="content">
+                        <img src="../imatgesBeguda/suc.jpg" alt="Suc taronja" />
+                    </div>
+                    <div>
+                        <h2>Suc taronja natural</h2>
+                    </div>
+
+                </article>
+
+
+
+                <article id="Granini" class="column suc">
+                    <div class="content">
+                        <img src="../imatgesBeguda/granini.jpg" alt="Granini" onclick="openModal('GraniniModal')" />
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('GraniniModal')">Granini
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="GraniniModal" class="modal">
+                        <span id="closeGranini" class="close" onclick="closeModal('GraniniModal')">
                 &times;
               </span>
-              <div class="caption">
-                <p>Disposem d'aquests formats:</p>
-                <br />
-                <ol>
-                  <li>Aquarius de 330cl</li>
-                </ol>
-              </div>
-            </div>
-          </article>
+                        <div class="caption">
+                            <em>Disposem d'aquests formats:</em>
+                            <br>
+                            <br>
+                            <p>Granini pinya ampolla petita</p>
+                            <p>Granini pinya slim-brike</p>
+                            <p>Granini pressec ampolla petita</p>
+                            <p>Granini pressec slim-brike</p>
+                            <p>Granini taronja ampolla petita</p>
+                            <p>Granini taronja slim-brike</p>
+                        </div>
+                    </div>
+                </article>
 
-          <article id="Tonica" class="column refresc">
-            <div class="content">
-              <img src="../imatgesBeguda/tonica.jpg" alt="Tonica Schweppes" />
-            </div>
-            <div>
-              <h2>Tonica Schweppes</h2>
-            </div>
-            <!-- The Modal -->
-            <div id="TonicaModal" class="modal">
-              <span
-                id="closeTonica"
-                class="close"
-                onclick="closeModal('TonicaModal')"
-              >
+                <article id="Hero" class="column suc">
+                    <div class="content">
+                        <img src="../imatgesBeguda/hero.jpg" alt="Hero" onclick="openModal('HeroModal')" />
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('HeroModal')">Hero
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="HeroModal" class="modal">
+                        <span id="closeHero" class="close" onclick="closeModal('HeroModal')">
                 &times;
               </span>
-              <div class="caption">
-                <p>
-                  Tonica Kas
-                </p>
-              </div>
-            </div>
-          </article>
+                        <div class="caption">
+                            <em>Disposem d'aquests formats:</em>
+                            <br>
+                            <br>
+                            <p>Hero ACE</p>
+                            <p>Hero mango</p>
+                            <p>Hero poma</p>
+                        </div>
+                    </div>
+                </article>
 
-          <article id="bitter" class="column refresc">
-            <div class="content">
-              <img src="../imatgesBeguda/bitter_kas.jpg" alt="Bitter Kas" />
-            </div>
-            <div>
-              <h2>Bitter Kas</h2>
-            </div>
-            <!-- The Modal -->
-            <div id="bitterModal" class="modal">
-              <span
-                id="closebitter"
-                class="close"
-                onclick="closeModal('bitterModal')"
-              >
+
+                <article id="Pago" class="column suc">
+                    <div class="content">
+                        <img src="../imatgesBeguda/pago.jpg" alt="Pago" onclick="openModal('PagoModal')" />
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('PagoModal')">Pago
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="PagoModal" class="modal">
+                        <span id="closePago" class="close" onclick="closeModal('PagoModal')">
                 &times;
               </span>
-              <div class="caption">
-                <p>
-                  Bitter Kas
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article id="suc" class="column suc">
-            <div class="content">
-              <img
-                src="../imatgesBeguda/suc.jpg"
-                alt="Suc taronja"
-                
-              />
-            </div>
-            <div>
-              <h2>Suc taronja natural</h2>
-            </div>
-
-          </article>
-
-
-
-          <article id="Granini" class="column suc">
-            <div class="content">
-              <img
-                src="../imatgesBeguda/granini.jpg"
-                alt="Granini"
-                onclick="openModal('GraniniModal')"
-              />
-            </div>
-            <div>
-              <h2 onclick="openModal('GraniniModal')">Granini
-                <i class="fas fa-plus-circle"></i>
-              </h2>
-            </div>
-            <!-- The Modal -->
-            <div id="GraniniModal" class="modal">
-              <span
-                id="closeGranini"
-                class="close"
-                onclick="closeModal('GraniniModal')"
-              >
+                        <div class="caption">
+                            <em>Disposem d'aquests formats:</em>
+                            <br>
+                            <br>
+                            <p>Pago ACE</p>
+                            <p>Pago mango</p>
+                            <p>Pago poma</p>
+                        </div>
+                    </div>
+                </article>
+                <article id="Cervesa" class="column cervesa">
+                    <div class="content">
+                        <img src="../imatgesBeguda/estrella.jpg" alt="Cervesa" onclick="openModal('CervesaModal')" />
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('CervesaModal')">Cervesa
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="CervesaModal" class="modal">
+                        <span id="closeCervesa" class="close" onclick="closeModal('CervesaModal')">
                 &times;
               </span>
-              <div class="caption">
-                <p>Disposem d'aquests formats:</p>
-                <br />
-                <ol>
-                  <li>Granini pinya ampolla petita</li>
-                  <li>Granini pinya slim-brike</li>
-                  <li>Granini pressec ampolla petita</li>
-                  <li>Granini pressec slim-brike</li>
-                  <li>Granini taronja ampolla petita</li>
-                  <li>Granini taronja slim-brike</li>
-                </ol>
-              </div>
-            </div>
-          </article>
-
-          <article id="Hero" class="column suc">
-            <div class="content">
-              <img
-                src="../imatgesBeguda/hero.jpg"
-                alt="Hero"
-                onclick="openModal('HeroModal')"
-              />
+                        <div class="caption">
+                            <em>Disposem d'aquests formats:</em>
+                            <br>
+                            <br>
+                            <p>Clara</p>
+                            <p>Free Damm ampolla petita</p>
+                            <p>Free Damm 250cc</p>
+                            <p>Estrella 250cc</p>
+                            <p>Estrella llauna 330cc</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <h2><a href="tel:+34938900216">Telf: 93 890 02 16</a></h2>
             </div>
             <div>
-              <h2 onclick="openModal('HeroModal')">Hero
-                <i class="fas fa-plus-circle"></i>
-              </h2>
+                <h2><a href="https://flecapares.cat/">flecapares.cat</a></h2>
             </div>
-            <!-- The Modal -->
-            <div id="HeroModal" class="modal">
-              <span
-                id="closeHero"
-                class="close"
-                onclick="closeModal('HeroModal')"
-              >
-                &times;
-              </span>
-              <div class="caption">
-                <p>Disposem d'aquests formats:</p>
-                <br />
-                <ol>
-                  <li>Hero ACE</li>
-                  <li>Hero mango</li>
-                  <li>Hero poma</li>
-                </ol>
-              </div>
-            </div>
-          </article>
-
-          
-          <article id="Pago" class="column suc">
-            <div class="content">
-              <img
-                src="../imatgesBeguda/pago.jpg"
-                alt="Pago"
-                onclick="openModal('PagoModal')"
-              />
-            </div>
-            <div>
-              <h2 onclick="openModal('PagoModal')">Pago
-                <i class="fas fa-plus-circle"></i>
-              </h2>
-            </div>
-            <!-- The Modal -->
-            <div id="PagoModal" class="modal">
-              <span
-                id="closePago"
-                class="close"
-                onclick="closeModal('PagoModal')"
-              >
-                &times;
-              </span>
-              <div class="caption">
-                <p>Disposem d'aquests formats:</p>
-                <br />
-                <ol>
-                  <li>Pago ACE</li>
-                  <li>Pago mango</li>
-                  <li>Pago poma</li>
-                </ol>
-              </div>
-            </div>
-          </article>
-          <article id="Cervesa" class="column cervesa">
-            <div class="content">
-              <img
-                src="../imatgesBeguda/estrella.jpg"
-                alt="Cervesa"
-                onclick="openModal('CervesaModal')"
-              />
-            </div>
-            <div>
-              <h2 onclick="openModal('CervesaModal')">Cervesa
-                <i class="fas fa-plus-circle"></i>
-              </h2>
-            </div>
-            <!-- The Modal -->
-            <div id="CervesaModal" class="modal">
-              <span
-                id="closeCervesa"
-                class="close"
-                onclick="closeModal('CervesaModal')"
-              >
-                &times;
-              </span>
-              <div class="caption">
-                <p>Disposem d'aquests formats:</p>
-                <br />
-                <ol>
-                  <li>Clara</li>
-                  <li>Free Damm ampolla petita</li>
-                  <li>Free Damm 250cc</li>
-                  <li>Estrella 250cc</li>
-                  <li>Estrella llauna 330cc</li>
-                </ol>
-              </div>
-            </div>
-          </article>
-
-
-
-        </section>
-      </main>
-      <footer>
-        <div>
-          <h2><a href="tel:+34938900216">Telf: 93 890 02 16</a></h2>
-        </div>
-        <div>
-          <h2><a href="https://flecapares.cat/">flecapares.cat</a></h2>
-        </div>
-      </footer>
+        </footer>
     </div>
     <script src="../js/menu.js"></script>
     <script src="../js/modal.js"></script>
     <script src="../js/portfoli.js"></script>
-  </body>
+    <script src="../js/scroll.js"></script>
+</body>
+
 </html>
