@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/portfoli.css">
     <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/scroll.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <title>Menu principal</title>
@@ -60,6 +61,7 @@
             <div id="myBtnContainer">
                 <button class="btn active" onclick="filterSelection('all')">Tot</button>
                 <button class="btn" onclick="filterSelection('verd')">Verds</button>
+                <button class="btn" onclick="filterSelection('blanc')">Blancs</button>
                 <button class="btn" onclick="filterSelection('negre')">Negres</button>
                 <button class="btn" onclick="filterSelection('vermell')">Vermells</button>
                 <button class="btn" onclick="filterSelection('infusio')">Infusions</button>
@@ -88,6 +90,7 @@
                         </div>
                     </div>
                 </article>
+
                 <article id="arab-menta" class="column verd">
                     <div class=" content ">
                         <img src="../imatgesTe/arab-menta.jpg" alt="Àrab-menta" onclick="openModal('arab-mentaModal')">
@@ -110,6 +113,323 @@
                         </div>
                     </div>
                 </article>
+
+                <article id="blanc" class="column blanc">
+                    <div class=" content ">
+                        <img src="../imatgesTe/blanc.jpg" alt="Àrab-menta" onclick="openModal('blancModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('blancModal')">Blanc amb fruits del bosc
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="blancModal" class="modal">
+                        <span id="closeBlanc" class="close" onclick="closeModal('blancModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                El te blanc (en xinès, 白茶; pinyin, báichá) original de la Xina és un te mínimament processat. El te blanc ve de delicades rovells i fulles joves de la planta Camellia sinensis originària de la Xina, concretament de la província de Fujian. Aquestes gemmes
+                                i fulles es deixen pansir lleugerament en primer lloc, després s'assequen als raigs de sol i són lleugerament processades per prevenir l'oxidació. Això preserva les característiques del seu gust.
+                            </p>
+                            <p>
+                                Malgrat el seu nom, el te blanc elaborat és de color groc pàl·lid. El seu nom deriva dels fins pèls de color blanc platejat en els brots sense obrir de la planta de el te, que li donen a la planta un aspecte blanquinós.
+                            </p>
+                            <p>
+                                Actualment no existeix una definició generalment acceptada de te blanc i molt poc acord internacional; algunes fonts fan servir el terme per referir-se a el te que simplement s'asseca sense processament addicional. No obstant això, la majoria de les definicions
+                                coincideixen que el te blanc no s'enrotlla ni s'oxida, el que dóna com a resultat un sabor caracteritzat com "més lleuger "que la majoria dels tes negres o tradicionals.
+
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="NuwalaEliya" class="column negre">
+                    <div class=" content ">
+                        <img src="../imatgesTe/NuwalaEliya.webp" alt="NuwalaEliya" onclick="openModal('NuwalaEliyaModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('NuwalaEliyaModal')">Nuwala Eliya
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="NuwalaEliyaModal" class="modal">
+                        <span id="closeNuwalaEliya" class="close" onclick="closeModal('NuwalaEliyaModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                Te de l'illa de Sri Lanka molt delicat de gustos i aromes intensos, està considerat el rei dels tes de Ceylan. Perfecte per prendre a l'hora de el te.
+                            </p>
+                            <p>
+                                Aquest te negre Ceylan Orange Pekoe procedeix de la plantació Battalgalla, al districte de Nuwara Eliya. És un te cultivat en plantacions que estan a una alçada de 2000 metres sobre el nivell de la mar, i aquesta ubicació al costat de l'grau del full
+                                li aporten la lleugeresa i la fragància característica dels tes d'aquesta zona.
+                            </p>
+                            <br>
+                            <em>Notes de tast:</em>
+                            <p>
+                                Licor de color ambre brillant.</p>
+                            <p>
+                                Sabor delicat, que recorda a panses i fruites madures.</p>
+                            <p>
+                                Astringència alta.</p>
+                            <br>
+
+                            <em>Moment de consum ideal:</em>
+                            <p>
+                                Esmorzar i mitja tarda, amb poca llet.</p>
+                            <p></p>
+                            Perfecte amb llimona i sucre per degustar com te gelat.
+
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="mango" class="column negre">
+                    <div class=" content ">
+                        <img src="../imatgesTe/te_negre_mango.jpg" alt="Mango" onclick="openModal('MangoModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('MangoModal')">Te negre amb Mango
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="MangoModal" class="modal">
+                        <span id="closeMango" class="close" onclick="closeModal('MangoModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                Barreja de tes de qualitat superior, amb l'aroma de mànec i flors de calèndula.
+                            </p>
+                            <p>
+                                De color fosc, és una infusió refrescant que es pot prendre fred o calent. Suau a paladar, té el gust dolç de l'préssec amb aromes fruiters i florals.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="Llimona" class="column negre">
+                    <div class=" content ">
+                        <img src="../imatgesTe/llimona.jpg" alt="Te amb Llimona" onclick="openModal('LlimonaModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('LlimonaModal')">Te negre amb Llimona
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="LlimonaModal" class="modal">
+                        <span id="closeLlimona" class="close" onclick="closeModal('LlimonaModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                El te negre és el que més teïna té, posseeix una aroma molt intens i un alt poder estimulant. Entre les seves propietats cal destacar la seva aportació a el sistema immunològic, ajuda a afavorir les defenses de l'organisme, redueix la pressió arterial
+                                i les inflamacions. És un te molt utilitzat per prevenir problemes de diabetis i colesterol.
+                            </p>
+                            <p>
+                                La llimona aporta un sabor àcid i dolç a aquest te. La closca de llimona conté substàncies molt beneficioses per a la salut, això sumat a la pròpia vitamina C, combat la inflor intestinal i afavoreix la nostra digestió. A més aquest cítric té una alta
+                                capacitat de neutralitzar i eliminar toxines.
+                            </p><br>
+                            <p>
+                                Un producte ecològic, natural i molt estimulant!
+
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="Vainilla" class="column negre">
+                    <div class=" content ">
+                        <img src="../imatgesTe/vainilla.jpg" alt="Te amb Vainilla" onclick="openModal('VainillaModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('VainillaModal')">Te negre amb Vainilla
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="VainillaModal" class="modal">
+                        <span id="closeVainilla" class="close" onclick="closeModal('VainillaModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                Te Negre xinès aromatitzat amb extracte natural de vainilla i trossets de vainilla en branca.</p>
+                            <p>
+                                Te energitzant i estimulant que, gràcies a la vainilla, esdevé una infusió dolça i aromàtica. Ideal per als que busquen un el gust pur de el te negre amb un toc dolç i de fragant gust.
+                            </p><br>
+                            <p>
+                                L'aportació de la vainilla en aquest te, a més del seu exquisit sabor, ens aporta un efecte medicinal sobre l'organisme.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="Taronja" class="column negre">
+                    <div class=" content ">
+                        <img src="../imatgesTe/Taronja.jpg" alt="Te amb clofolla de taronja" onclick="openModal('TaronjaModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('TaronjaModal')">Te negre amb clofolla de Taronja
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="TaronjaModal" class="modal">
+                        <span id="closeTaronja" class="close" onclick="closeModal('TaronjaModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                El te negre té una alta concentració en teïna i una aroma molt intens, el que li proporciona un alt poder estimulant. Un producte ecològic que destaca per la seva aportació a el sistema immunològic, ajuda a afavorir les defenses de l'organisme, redueix
+                                la pressió arterial i les inflamacions. A més, el te negre s'utilitza per combatre problemes de diabetis i colesterol.
+                            </p>
+                            <p>
+                                La taronja té gran contingut d'aigua i vitamina C, àcid fòlic i minerals. La seva escorça ajuda a el trànsit intestinal. És bona per ajudar a l'fetge a processar els greixos. Usada en infusions, servirà d'aliada per a la pèrdua de pes.
+                            </p><br>
+                            <p>
+                                Recàrrega el teu cos d'energia amb un intens sabor!
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="Canyella" class="column negre">
+                    <div class=" content ">
+                        <img src="../imatgesTe/Canyella.jpg" alt="Te amb Canyella" onclick="openModal('CanyellaModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('CanyellaModal')">Te negre amb Canyella
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="CanyellaModal" class="modal">
+                        <span id="closeCanyella" class="close" onclick="closeModal('CanyellaModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                La canyella és un dels ingredients més demandats pels nostres clients, per aquesta raó, la mateixa està present en molts dels nostres tes i infusions. En aquest cas, també ho està en aquest te negre de primeríssima qualitat en el qual la canyella és la
+                                veritable protagonista. Un producte que no només aporta aroma, sinó també un agradable sabor que fa, més que mai, innecessari l'ús d'edulcorants i que suavitza el costat més aspre de el te negre.</p>
+                            <br>
+                            <em>Propietats De l'Te Negre Amb Canela</em>
+                            <p>
+                                Els beneficis de la canyella en el te negre, a més de ser estimulant també és ideal per reduir la inflor d'estómac, així com per millorar mals processos digestius. Si prens aquest te després d'un àpat copiós o que no t'ha caigut molt bé, et calmarà l'estómac,
+                                aportant-li una agradable sensació de benestar.</p>
+                            <br>
+                            <em>Beneficis De l'Te Negre Amb Canela</em>
+                            <p>
+                                D'altra banda, també ajuda a controlar els nivells de sucre en sang, per la qual cosa es recomana la seva ingesta en persones que pateixen de diabetis tipus 2.
+                            </p>
+                            <p>
+                                Un altre de les propietats i beneficis de la canyella amb te negre, millora el nostre estat d'ànim i redueix els mals de cap de forma natural i sense efectes secundaris.
+                            </p>
+                            <p>
+                                La infusió de te negre amb canyella és un bon aliat per a la nostra salut pel seu poder antioxidant i també ens ajudarà a cuidar l'aspecte de la nostra pell.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="EarlGrey" class="column negre">
+                    <div class=" content ">
+                        <img src="../imatgesTe/EarlGrey.jpg" alt="Earl Grey" onclick="openModal('EarlGreyModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('EarlGreyModal')">Te negre Earl Grey
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="EarlGreyModal" class="modal">
+                        <span id="closeEarlGrey" class="close" onclick="closeModal('EarlGreyModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                El te earl grey (pronunciat éorlgri, AFI: / ɜ: rlɡɾɪ /) és una barreja de te aromatitzada amb oli de bergamota. Encara que està feta més típicament amb te negre, el te s'obtenen amb varietats de te negre fermentat de l'Índia i Sri Lanka (antigament Ceilan),
+                                encara que, donada la seva popularitat, hi ha moltes diferències de qualitats i orígens al mercat, i també es comercialitza earl grey de te verd o te blanc, i versions descafeïnades. La bergamota és la fruita d'una planta
+                                cítrica fragant, de la qual s'utilitza l'oli, extret més de la pell que de la polpa. L'oli essencial de millor qualitat s'aconsegueix dels fruits de Calàbria, al sud d'Itàlia, però, a causa del seu elevat preu al mercat,
+                                a les mescles de menor qualitat es substitueix per succedanis o per fruits d'altres orígens, com Argentina , Costa d'Ivori o el Brasil.
+                            </p>
+                            <p>
+                                Taronja bergamota de Calàbria, Itàlia.
+                            </p>
+                            <p>
+                                Se sol prendre sol o amb una mica de llet. Pel seu sabor cítric, resulta refrescant i es pot prendre fred. A causa de la intensitat de l'gust de l'earl grey original, es considera apropiat per a prendre en qualsevol moment del dia, des acompanyant el
+                                tradicional esmorzar anglès, entre hores o, per descomptat, a l'hora de el te.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="Ceylan" class="column negre">
+                    <div class=" content ">
+                        <img src="../imatgesTe/Ceylan.png" alt="Te de Ceylan" onclick="openModal('CeylanModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('CeylanModal')">Te negre Ceylan
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="CeylanModal" class="modal">
+                        <span id="closeCeylan" class="close" onclick="closeModal('CeylanModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                El te negre Ceylan és una varietat de te que se sol conrear a Sri Lanka i així anomenat antigament Ceylan. Destaca per ser exòtic i aromàtic, amb un toc cítric de color vermellós. L'illa de Sri Lanka té un clima ideal per al bon creixement de el te negre
+                                Ceylan. Per al seu correcte creixement, ajuda en gran quantitat per les pluges monsòniques així com també dels sòls fèrtils. </p>
+                            <p>Aquestes condicions metereològiques ajuden a que el seu creixement sigui amb força així com en abundància.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="EnglishBreakfast" class="column negre">
+                    <div class=" content ">
+                        <img src="../imatgesTe/EnglishBreakfast.jpg" alt="English Breakfast" onclick="openModal('EnglishBreakfastModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('EnglishBreakfastModal')">Te English Breakfast
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="EnglishBreakfastModal" class="modal">
+                        <span id="closeEnglishBreakfast" class="close" onclick="closeModal('EnglishBreakfastModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                El Te de l'esmorzar anglès o English Breakfast Tea, és una barreja tradicional de tes procedents d'Assam, Ceilan i Kenya, però en barreges més exclusives s'inclou sovint el te Keemun. En la cultura de el te britànic és un dels tes combinats més populars
+                                i de la forma més comuna, l'English Breakfast Tea és una barreja de te negre que en general es descriu com de gran cos, robust i ric, combina molt bé amb llet i sucre, amb un estil tradicionalment associat amb un esmorzar
+                                abundant anglès.
+                            </p>
+                            <p>
+                                Al segle 20 es bevia gairebé exclusivament el te per esmorzar en tota la dècada fins a 1960. Per al mercat del Regne Unit les petites barreges especials de fulla de te de Kenya, Tanzània, Malawi, Moçambic eren els més comuns i majors exportadors de tes
+                                i moltes d'elles eren colònies d'Anglaterra.
+                            </p>
+                            <p>
+                                Hi ha diferents llegendes sobre els seus orígens, ja que beure te negre per esmorzar és de fet un costum britànica amb molta història. La pràctica de referir-se a una barreja com "English Breakfast Tea", no sembla que trobi els seus orígens fora d'Anglaterra,
+                                en l'època colonial dels Estats Units.
+                            </p>
+                            <p>
+                                Antigament els britànics van ridiculitzar la bosseta de te o tes en sobres per a la seva preparació, però avui en dia a causa de la falta de temps, s'ha convertit en un mètode normal de preparació. Després dels 1960 ha augmentat també el consum de cafè
+                                a Anglaterra i als del mateix moment ha baixat el consum de Te, especialment l'English Breakfast Tea, i curiosament molta gent ha canviat el te pel cafè.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
                 <article id="AssamHamurtis" class="column negre">
                     <div class=" content ">
                         <img src="../imatgesTe/Assam-Hamurtis.jpg" alt="Assam Hamurtis" onclick="openModal('AssamHamurtisModal')">
@@ -132,6 +452,32 @@
                         </div>
                     </div>
                 </article>
+
+                <article id="PuErh" class="column vermell">
+                    <div class=" content ">
+                        <img src="../imatgesTe/PuErh.jpg" alt="Pu Erh" onclick="openModal('PuErhModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('PuErhModal')">Te Pu Erh
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="PuErhModal" class="modal">
+                        <span id="closePuErh" class="close" onclick="closeModal('PuErhModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                El te pu-erh és conegut a Occident també com te vermell (en xinès, 普洱茶; pinyin, pǔ'ěrchá) i el seu nom prové de la regió de Pu'er de Yunnan Xina, d'on procedeix. Es tracta d'un te inusual a la Xina, d'aquesta manera el major productor de el te vermell
+                                o pu-erh de el món. Consumit únicament i exclusivament per la noblesa xinesa durant centenars d'anys. A l'contrari que altres tes, que solen prendre frescos després de la seva recol·lecció, el procés de fermentació d'aquesta
+                                varietat de Camellia sinensis pot durar de 2 a 60 anys en bótes de bambú, el que fa que les fulles assoleixin un color rogenc i, per tant, també la infusió. És molt rar trobar te pu-erh de 50 anys i sol haver anyades (a
+                                l'igual que el vi) que indiquen les diferents qualitats que hi ha hagut en les collites de cada any. El te pu-erh s'adquireix en boles compactes, "pastissos" i "maons de te" que s'enfonsen abans de la seva preparació.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
                 <article id="oolong" class="column infusio">
                     <div class=" content ">
                         <img src="../imatgesTe/Oolong.jpg" alt="Oolong" onclick="openModal('oolongModal')">
@@ -154,6 +500,187 @@
                         </div>
                     </div>
                 </article>
+
+                <article id="1001nits" class="column verd">
+                    <div class=" content ">
+                        <img src="../imatgesTe/1001nits.png" alt="1001 nits" onclick="openModal('1001nitsModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('1001nitsModal')">Te 1001 nits
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="1001nitsModal" class="modal">
+                        <span id="close1001nits" class="close" onclick="closeModal('1001nitsModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                Combinació ideal de te negre i verd amb pètals de rosa de gessamí, girasols i safràs amb aroma de fruita exòtica. Tot i que la seva infusió és lleugera, el seu sabor i aroma són intensos.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="Egipci" class="column verd">
+                    <div class="content">
+                        <img src="../imatgesTe/Egipci.jpg" alt="Te Egipci" />
+                    </div>
+                    <div>
+                        <h2>Te Egipci</h2>
+                    </div>
+                </article>
+
+                <article id="Descafeinat" class="column infusio">
+                    <div class="content">
+                        <img src="../imatgesTe/Descafeinat.jpg" alt="Te Descafeinat" />
+                    </div>
+                    <div>
+                        <h2>Te Descafeinat</h2>
+                    </div>
+                </article>
+
+                <article id="TeLlet" class="column infusio">
+                    <div class="content">
+                        <img src="../imatgesTe/TeLlet.jpg" alt="Te amb Llet" />
+                    </div>
+                    <div>
+                        <h2>Te amb Llet</h2>
+                    </div>
+                </article>
+                <article id="Roiboos" class="column infusio">
+                    <div class=" content ">
+                        <img src="../imatgesTe/Roiboos.jpg" alt="Roiboos" onclick="openModal('RoiboosModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('RoiboosModal')">Roiboos
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="RoiboosModal" class="modal">
+                        <span id="closeRoiboos" class="close" onclick="closeModal('RoiboosModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                Roiboos (paraula en afrikaans que vol dir «arbust vermell»; nom científic Aspalathus linearis) és un membre del tipus Ginesta d'escombres de la família dels llegums de plantes que creixen als fynbos de Sud-àfrica.
+                            </p>
+                            <p>
+                                El nom genèric ve de la planta Calicotome villosa, aspalathos en grec. Aquesta planta té un creixement i flors molt similars a l'arbust vermell. L'epítet específic linearis ve de l'estructura lineal de creixement de la planta i fulles de tipus agulla.
+                            </p>
+                            <p>
+                                La planta s'usa per a fer una infusió anomenada roibos, te d'arbust (esp. en Àfrica del Sud), redbush tea (a UK), te vermell de Sud-àfrica, o te vermell. El producte ha esdevingut popular a Sud-àfrica des de fa generacions i ara es consumeix a molts països.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="FruitesBosc" class="column infusio">
+                    <div class=" content ">
+                        <img src="../imatgesTe/FruitesBosc.jpg" alt="Fruites del Bosc" onclick="openModal('FruitesBoscModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('FruitesBoscModal')">Fruites del Bosc
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="FruitesBoscModal" class="modal">
+                        <span id="closeFruitesBosc" class="close" onclick="closeModal('FruitesBoscModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                Infusió de fruits antioxidants. Ajuda a reduïr l'envelliment per una vida més saludable i vital. Redueix els radicals lliures que produeixen malalties cardiovasculars amb risc de càncer i altres malalties.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="Camamilla" class="column infusio">
+                    <div class=" content ">
+                        <img src="../imatgesTe/Camamilla.jpg" alt="Camamilla" onclick="openModal('CamamillaModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('CamamillaModal')">Camamilla
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="CamamillaModal" class="modal">
+                        <span id="closeCamamilla" class="close" onclick="closeModal('CamamillaModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                La infusió de camamilla és una de les begudes més populars en el mercat i té poderoses propietats antiinflamatòries i antiespasmòdiques.
+                            </p>
+                            <p>
+                                La camamilla conté Chamazulene, un compost químic aromàtic que posseeix propietats antiinflamatòries, analgèsiques i antiespasmòdiques.
+                            </p>
+                            <p>
+                                Ja sigui que tinguis excés de treball o tinguis un refredat, a l'preparar una tassa d'infusió de camamilla, inhala la seva meravellosa fragància floral i després veu desaparèixer les teves preocupacions mentre prens aquesta màgica beguda daurada.
+                            </p>
+                            <p>
+                                Els seus principals beneficis per a la salut inclouen la seva capacitat per protegir la pell, disminuir els nivells d'estrès, regular la son i calmar els còlics menstruals. També augmenta el sistema immunològic, tracta problemes gastrointestinals i redueix
+                                la inflor de ventre, entre d'altres.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="Til-la" class="column infusio">
+                    <div class=" content ">
+                        <img src="../imatgesTe/Til-la.jpg" alt="Til-la" onclick="openModal('Til-laModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('Til-laModal')">Til·la
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="Til-laModal" class="modal">
+                        <span id="closeTil-la" class="close" onclick="closeModal('Til-laModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                La til·la principalment s'utilitza per a relaxar-se i combatre l'insomni o estres. Però a més, és antiespasmòdica, digestiva, antiinflamatòria, molt rica en vitamina C.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="Tisana" class="column infusio">
+                    <div class=" content ">
+                        <img src="../imatgesTe/Tisana.jpg" alt="Tisana" onclick="openModal('TisanaModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('TisanaModal')">Tisana
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="TisanaModal" class="modal">
+                        <span id="closeTisana" class="close" onclick="closeModal('TisanaModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <p>
+                                Les tisanes d'herbes són infusions que es preparen amb fins nutricionals o medicinals. Per fer-s'usen les flors, fruits o arrels de diferents plantes medicinals o amb propietats beneficioses per a la salut.
+                            </p>
+                            <p>
+                                Encara se les coneix com tes d'herbes, en realitat difereixen dels tes tradicionals, que estan fets amb les fulles de les plantes. Les tisanes d'herbes solen ser usades en medicina natural per aprofitar els seus efectes sedants, estimulants, relaxants
+                                o terapèutics.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+
+
             </section>
 
 
@@ -166,6 +693,7 @@
                 <h2><a href="https://flecapares.cat/">flecapares.cat</a></h2>
             </div>
         </footer>
+        <a href="#top" id="fletxaScroll"><i class="fas fa-arrow-circle-up"></i></a>
     </div>
     <script src="../js/menu.js"></script>
     <script src="../js/modal.js"></script>

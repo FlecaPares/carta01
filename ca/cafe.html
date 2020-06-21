@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/portfoli.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>Menu principal</title>
+</head>
+
+<body>
+    <div class="bodyTreball">
+        <header>
+            <!-- <div><i class="fa fa-bars"></i></div> -->
+            <nav class="menuNav">
+                <!-- Boto openNav -->
+                <div id="btnNav">
+                    <i class="fas fa-bars" id="btn" onclick="openNav()"></i>
+                </div>
+
+                <ul class="navMenu" id="navMenu">
+                    <br />
+                    <i class="fas fa-times" id="cancel" onclick="closeNav()"></i>
+                    <li class="liNavMenu">
+                        <a href="javascript:canviPagina('menu.html');" class="liNavMenuA">Menú</a>
+                    </li>
+                    <li class="liNavMenu">
+                        <a href="javascript:canviPagina('tes.html');" class="liNavMenuA">Tes i infusions</a>
+                    </li>
+                    <li class="liNavMenu">
+                        <a href="javascript:canviPagina('cafe.html');" class="liNavMenuA">Cafès i làctics</a>
+                    </li>
+
+                    <li class="liNavMenu">
+                        <a href="javascript:canviPagina('refresc.html');" class="liNavMenuA">Refrescs</a>
+                    </li>
+                    <li class="liNavMenu separador">* * * * *</li>
+                    <li class="liNavMenu">
+                        <a href="javascript:canviPagina('monTe.html');" class="liNavMenuA">El món del Te</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <h1 id="titolHeader">Parés</h1>
+            </div>
+            <div class="any1907">
+                <h2>1907</h2>
+            </div>
+        </header>
+        <main class="container">
+            <br>
+            <h1>Cafès i làctics</h1>
+            <br>
+
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')">Tot</button>
+                <button class="btn" onclick="filterSelection('cafe')">Cafès</button>
+                <button class="btn" onclick="filterSelection('llet')">Làctics</button>
+            </div>
+
+            <!-- Portfolio Gallery Grid -->
+            <section id="secPortfoli">
+                <article id="cafe" class="column cafe">
+                    <div class="content">
+                        <img src="../imatgesCafe/cafe.jpg" alt="Cafè" onclick="openModal('cafeModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('cafeModal')">Cafè
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="cafeModal" class="modal">
+                        <span id="closeCafe" class="close" onclick="closeModal('cafeModal')">
+                            &times;
+                        </span>
+                        <div class="caption">
+                            <p>
+                                Selecció de cafès aràbics orgànics que aporten uns matisos en tassa idèntics als d’un gran espresso, amb notes cítriques i florals en aroma.</p>
+                            <p>
+                                Les càpsules del nostre cafè orgànic son 100% compostables.</p>
+                            <p>Disposem de diferents varietats amb origens i característiques molt diferenciades per a gaudir en diferents moments del dia: Intenso , Ristretto, Cremoso, Più Aroma i Decaffeinato.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article id="descafeinat" class="column cafe">
+                    <div class="content">
+                        <img src="../imatgesCafe/descafeinat.jpg" alt="Descafeïnat">
+                    </div>
+                    <div>
+                        <h2>Descafeïnat</h2>
+                    </div>
+                </article>
+
+
+
+                <article id="Tallat" class="column cafe">
+                    <div class=" content ">
+                        <img src="../imatgesCafe/Tallat.jpg" alt="Tallat" onclick="openModal('TallatModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('TallatModal')">Tallat
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="TallatModal" class="modal">
+                        <span id="closeTallat" class="close" onclick="closeModal('TallatModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <em>Disposem d'aquestes varietats:</em>
+                            <br>
+                            <br>
+                            <p>Tallat</p>
+                            <p>Tallat descafeïnat</p>
+                            <p>Tallat amb gel</p>
+                            <p>Tallat amb llet de soja</p>
+                        </div>
+                    </div>
+                </article>
+
+
+
+
+                <article id="cafeLlet" class="column cafe">
+                    <div class=" content ">
+                        <img src="../imatgesCafe/cafeLlet.jpg" alt="cafè amb llet" onclick="openModal('cafeLletModal')">
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('cafeLletModal')">Cafè amb llet
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="cafeLletModal" class="modal">
+                        <span id="closecafeLlet" class="close" onclick="closeModal('cafeLletModal')">
+                                &times;
+                            </span>
+                        <div class="caption">
+                            <em>Disposem d'aquestes varietats:</em>
+                            <br>
+                            <br>
+                            <p>Cafè amb llet</p>
+                            <p>Cafè amb llet descafeïnat</p>
+                            <p>Bombó - Cafè amb llet condensada</p>
+                            <p>Cafè amb llet de soja</p>
+                            <p>Capuccino</p>
+                            <p>Cafè amb nata</p>
+                        </div>
+                    </div>
+                </article>
+
+
+
+
+                <article id="cafeLlet" class="column cafe">
+                    <div class="content">
+                        <img src="../imatgesCafe/cafeGel2.jpg" alt="Cafè amb gel">
+                    </div>
+                    <div>
+                        <h2>Cafè amb gel</h2>
+                    </div>
+                </article>
+                <article id="llet" class="column llet">
+                    <div class="content">
+                        <img src="../imatgesCafe/llet2.jpg" alt="Llet">
+                    </div>
+                    <div>
+                        <h2>Llet</h2>
+                    </div>
+                </article>
+                <article id="colaCao" class="column llet">
+                    <div class="content">
+                        <img src="../imatgesCafe/colaCao.jpg" alt="Cola Cao">
+                    </div>
+                    <div>
+                        <h2>Cola Cao</h2>
+                    </div>
+                </article>
+                <article id="cacaoLat" class="column llet">
+                    <div class="content">
+                        <img src="../imatgesCafe/cacaoLat.jpg" alt="Cacaolat" onclick="openModal('cacaolatModal')" />
+                    </div>
+                    <div>
+                        <h2 onclick="openModal('cacaolatModal')">Cacaolat
+                            <i class="fas fa-plus-circle"></i>
+                        </h2>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="cacaolatModal" class="modal">
+                        <span id="closecacaolat" class="close" onclick="closeModal('cacaolatModal')">
+                &times;
+              </span>
+                        <div class="caption">
+                            <em>Disposem d'aquests formats:</em>
+                            <br>
+                            <br>
+                            <p>Cacaolat en envàs de vidre de 250cc</p>
+                            <p>Cacaolat en envàs de plàstic de 200cc</p>
+                        </div>
+                    </div>
+                </article>
+                <article id="xocolata" class="column llet">
+                    <div class="content">
+                        <img src="../imatgesCafe/xocolata.jpg" alt="Xocolata descfeta">
+                    </div>
+                    <div>
+                        <h2>Xocolata descfeta</h2>
+                    </div>
+                </article>
+            </section>
+
+
+        </main>
+        <footer>
+            <div>
+                <h2><a href="tel:+34938900216">Telf: 93 890 02 16</a></h2>
+            </div>
+            <div>
+                <h2><a href="https://flecapares.cat/">flecapares.cat</a></h2>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/menu.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/portfoli.js"></script>
+    <script src="../js/scroll.js"></script>
+</body>
+
+</html>
